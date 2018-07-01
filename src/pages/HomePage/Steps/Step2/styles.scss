@@ -1,0 +1,65 @@
+.appBar {
+  position: relative;
+}
+
+.flex {
+  flex: 1;
+}
+
+.root {
+  .track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+}
+
+:global {
+  .viewport {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      border: 2px dashed #3f51b5;
+      width: 60%;
+      height: 50%;
+      right: 20%;
+      bottom: 20%;
+    }
+
+    &.vertical {
+      &::after {
+        top: 45%;
+        left: 10%;
+        width: 80%;
+        height: 20%;
+        right: 10%;
+        bottom: 35%;
+      }
+    }
+  }
+
+  .viewport > canvas,
+  .viewport > video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  canvas.drawing,
+  canvas.drawingBuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

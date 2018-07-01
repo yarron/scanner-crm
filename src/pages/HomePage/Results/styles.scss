@@ -1,0 +1,20 @@
+.root {
+  max-width: 500px;
+  margin: 0 auto;
+  overflow-x: auto;
+
+  .head {
+    background-color: #3f51b5;
+    color: white;
+
+    .row {
+      th {
+        color: white;
+      }
+    }
+  }
+
+  .table {
+    min-width: 700;
+  }
+}

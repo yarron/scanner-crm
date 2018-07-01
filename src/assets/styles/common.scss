@@ -1,0 +1,10 @@
+@import '~assets/styles/variables';
+
+body {
+  background-color: $bg-home-page;
+  color: $color-black;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}

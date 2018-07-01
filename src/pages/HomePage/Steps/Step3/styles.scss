@@ -1,0 +1,15 @@
+.root {
+  text-align: center;
+  padding: 10px 0;
+
+  .alert {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    text-align: left;
+
+    & > :last-child {
+      margin-left: 15px;
+    }
+  }
+}

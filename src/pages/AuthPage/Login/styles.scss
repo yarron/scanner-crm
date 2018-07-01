@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  height: 100vh;
+
+  .icon {
+    margin-right: 20px;
+  }
+
+  .paper {
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+  }
+
+  .appBar {
+    position: relative;
+  }
+
+  .action {
+    text-align: center;
+    padding: 24px;
+
+    button {
+      margin-top: 20px;
+    }
+  }
+}
