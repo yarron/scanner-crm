@@ -6,3 +6,4 @@ node_modules
 public
 webpack-assets.json
 webpack-stats.json
+src/config
